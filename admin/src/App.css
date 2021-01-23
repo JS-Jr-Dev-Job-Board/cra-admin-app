@@ -1,10 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  color: dodgerblue;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+body {
+  padding: 2rem;
+}
+
+button {
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  width: 125px;
+  cursor: pointer;
 }
 
 @media (prefers-reduced-motion: no-preference) {
