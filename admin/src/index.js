@@ -7,13 +7,8 @@ import { Auth0Provider } from '@auth0/auth0-react';
 
 require('dotenv').config()
 
-// const dotenv = require('dotenv')
-// dotenv.config()
-
 const domain = process.env.REACT_APP_AUTH0_DOMAIN
-console.log("index domain", domain)
 const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID 
-console.log("index clientId", clientId)
 
 ReactDOM.render(
   <Auth0Provider
