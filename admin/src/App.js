@@ -1,4 +1,5 @@
-import logo from './logo.svg';
+import LoginBtn from './components/OaLogic/LoginBtn'
+import LogoutBtn from './components/OaLogic/LogoutBtn'
 import './App.css';
 
 function App() {
@@ -7,8 +8,8 @@ function App() {
       <h1>
         Welcome to the Central Nervous System
       </h1>
-      <button>download experimental malware</button>
-      <button>logout</button>
+      <LoginBtn />
+      <LogoutBtn />
     </div>
   );
 }
