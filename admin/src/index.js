@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Auth0Provider } from '@auth0/auth0-react'
+import { Auth0Provider } from '@auth0/auth0-react';
+
+// require('dotenv').config()
 
 const domain = process.env.REACT_APP_AUTH0_DOMAIN
-const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID
+console.log("index domain", domain)
+const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID 
+console.log("index clientId", clientId)
 
 ReactDOM.render(
   <Auth0Provider
@@ -14,9 +18,7 @@ ReactDOM.render(
     clientId={clientId}
     redirectUri={window.location.origin}
   >
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>  
+    <App />
   </Auth0Provider>,
   document.getElementById('root')
 );
