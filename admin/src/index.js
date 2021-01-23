@@ -5,7 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Auth0Provider } from '@auth0/auth0-react';
 
-// require('dotenv').config()
+require('dotenv').config()
+
+// const dotenv = require('dotenv')
+// dotenv.config()
 
 const domain = process.env.REACT_APP_AUTH0_DOMAIN
 console.log("index domain", domain)
