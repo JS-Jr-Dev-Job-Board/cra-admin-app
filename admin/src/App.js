@@ -5,6 +5,7 @@ import LoginBtn from './components/OaLogic/LoginBtn'
 import LogoutBtn from './components/OaLogic/LogoutBtn'
 import Profile from './components/Profile';
 import { useAuth0 } from '@auth0/auth0-react';
+import EndpointPage from './components/EndpointPage/EndpointPage';
 
 function App() {
   const { isLoading } = useAuth0()
@@ -18,6 +19,7 @@ function App() {
       <LoginBtn />
       <LogoutBtn />
       <Profile />
+      <EndpointPage/>
     </div>
   );
 }
