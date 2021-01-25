@@ -7,51 +7,52 @@ Jobs: []
 
 const DashboardCard = () => {
 
-    
   const [job, setJob] = useState(jobState);
+
+
   useEffect(() => {
     axios
       .get(`/`, {})
       .then((res) => {
         const data = res.data;
         setJob(data)
-        console.log(setJob);
+        // console.log(setJob);
       })
       .catch((err) => {
         debugger;
       });
   }, []);
 
+
   return (
-  <>
-  <h1> Howdy</h1>
-  <div className="card">
+  
+  <div className="dashboardCard">
           <div>
             {Object.keys(job).map((key) => {
               return (
                 <div key={key}>
                   {job[key].map((jobs) => {
                     return (
-                      <div align="center">
-                        <div key={jobs.id} margin="xlarge" pad="large">
-                          {" "}
-                          <h1>{jobs.companyName}</h1>
+                      <div className="card">
+                        <div key={jobs.id}>
+                      
+                          <h2>{jobs.companyName}</h2>
                           <div>
                             <div>
-                              <h3>Position: {jobs.position}</h3>
+                              <h3> <span>{jobs.position}</span></h3>
                             </div>
                             <div>
-                              <h4>Salary: {jobs.salary}</h4>
+                              <h4>Salary: <span>{jobs.salary}</span></h4>
                             </div>
                             <div>
-                              <h4> Location: {jobs.location}</h4>
+                              <h4> Location: <span>{jobs.location}</span></h4>
                             </div>
                             <h4>Job Description:</h4>
                             <p>{jobs.description}</p>
                           </div>
                           <div className="JobCardApply">
                             
-                          <button href={job.applyUrl}>apply-link</button>
+                          <button href={jobs.applyUrl} target="_blank"> apply-link</button>
                           </div>
                         </div>
                       </div>
@@ -63,7 +64,7 @@ const DashboardCard = () => {
           </div>
         </div>
 
-  </>
+  
   )
   
 };
