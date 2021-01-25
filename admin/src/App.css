@@ -19,10 +19,42 @@ body {
 }
 
 button {
-  margin: 2rem 0;
-  padding: 1rem 2rem;
+  margin: 1rem 0;
+  padding: .5rem;
   width: 125px;
   cursor: pointer;
+}
+
+h2 {
+  color: #303113;
+  text-align: center;
+  text-decoration: #303113 underline;
+  margin: 10px;
+}
+h3{
+  margin-bottom: 1rem;
+}
+p {
+  color: #303113;
+  margin: 5px;
+}
+.dashboard {
+  padding-top: 1rem;
+}
+.dashboardCard {
+  display: flex;
+  margin: 2rem;
+  flex-direction: column;
+  padding: 1rem;
+}
+.card {
+  border: solid 2px lightgrey;
+  padding: 2rem;
+  margin: .5rem;
+}
+
+span {
+  color: #303113;
 }
 
 @media (prefers-reduced-motion: no-preference) {
