@@ -1,4 +1,5 @@
 import React from "react";
+import {Route} from 'react-router-dom';
 
 import "./App.css";
 import LoginBtn from "./components/OaLogic/LoginBtn";
@@ -17,7 +18,7 @@ function App() {
       <LoginBtn />
       <LogoutBtn />
       <Profile />
-      <Signin />
+      <Route path='/signin' component={Signin}/>
     </div>
   );
 }
