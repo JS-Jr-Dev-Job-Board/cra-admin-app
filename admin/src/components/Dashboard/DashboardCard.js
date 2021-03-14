@@ -31,9 +31,9 @@ const DashboardCard = () => {
             {Object.keys(job).map((key) => {
               return (
                 <div key={key}>
-                  {job[key].map((jobs) => {
+                  {job[key].map((jobs, i) => {
                     return (
-                      <div className="card">
+                      <div className="card" key={i}>
                         <div key={jobs.id}>
                       
                           <h2>{jobs.companyName}</h2>
