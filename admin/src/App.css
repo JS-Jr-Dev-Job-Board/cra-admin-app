@@ -54,3 +54,51 @@ button {
     transform: rotate(360deg);
   }
 }
+
+
+.PotentialJobCard {
+  box-sizing: border-box;
+  box-shadow: 0 2px 3px #ccc;
+  margin: 10px;
+  padding: 10px;
+  width: 75%;
+  display: flex;
+}
+
+.PotentialJobCard a {
+  text-decoration: none;
+}
+.PotentialJobCard a:hover {
+  color: black;
+}
+.PotentialJobCard p {
+  margin: 15px;
+}
+
+.EndpointPageTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.EndpointPageFireBtn {
+  color: tomato;
+  width: 20%;
+  height: 50%;
+}
+.EndpointPagePotentialListings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.EndpointPageFooter {
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 80%;
+}
+.EndpointPageSubmitBtn {
+  width: 40%;
+  color: tomato;
+}
