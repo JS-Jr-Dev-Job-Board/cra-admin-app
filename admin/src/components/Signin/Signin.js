@@ -8,7 +8,6 @@ const initState = {
 
 const Signin = (props) => {
   const [form, setForm] = useState(initState);
-  console.log(form);
 
   const changeHandler = (e) => {
     setForm({ ...form, [e.target.id]: e.target.value });
